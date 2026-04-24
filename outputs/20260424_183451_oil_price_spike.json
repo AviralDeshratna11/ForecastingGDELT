@@ -1,0 +1,144 @@
+{
+  "query": "oil price spike",
+  "event_description": "oil price spike",
+  "final_probability": 0.2273,
+  "raw_probability": 0.2273,
+  "calibrated_probability": 0.38,
+  "extremized_probability": 0.2273,
+  "recommendation": "NO",
+  "kelly_fraction": -0.1364,
+  "reasoning": "The weak upward trend (slope +0.0386, strength 0.10) combined with negative momentum (-0.0081) and recent Goldstein scale inflection to +2.15 sigma indicates deteriorating conditions for an oil price spike. While AvgTone remains in high conflict territory at -3.32 and Material Conflict dominates at 98%, the forecast trajectory toward less negative sentiment [-2.38, -1.14] and the April 24 cooperation signal shift suggest stabilization rather than escalation. The probability of 38% reflects this mixed picture where conflict conditions persist but momentum favors de-escalation.\n\nRationale: AvgTone at -3.32 indicates persistent conflict environment (below -3 threshold), with current z-score of -1.95 showing elevated but not extreme negativity. However, Goldstein scale recently crossed +2.15 sigma on April 24 indicating shift toward cooperation-generating events. Trend direction is UP with slope +0.0386 but strength is weak at 0.10/1.0, and momentum is negative at -0.0081 showing deceleration. Material Conflict dominates at 98% of events, but the upward tone forecast range [-2.38, -1.14] suggests improving sentiment. The combination of weak upward trend with negative momentum and recent cooperation signals points to declining probability of oil price spike.",
+  "reflection_notes": "Maximum iterations reached. Final Brier=0.5971.",
+  "evaluation_score": 0.5971,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": -1.954,
+    "target_mean": -3.299,
+    "target_std": 0.763,
+    "n_inflections": 9,
+    "n_significant": 9,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.03862,
+    "forecast_direction": "up",
+    "forecast_strength": 0.1,
+    "forecast_momentum": -0.0081,
+    "forecast_uncertainty": 1.2429,
+    "top_inflections": [
+      {
+        "date": "2026-04-05 00:00:00",
+        "z_score": 2.354,
+        "direction": "up",
+        "description": "polarity crossed z=2.35 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-28 00:00:00",
+        "z_score": 2.262,
+        "direction": "up",
+        "description": "goldstein_scale crossed z=2.26 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-16 00:00:00",
+        "z_score": 2.207,
+        "direction": "up",
+        "description": "activity_density crossed z=2.21 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-06 00:00:00",
+        "z_score": -2.205,
+        "direction": "down",
+        "description": "avg_tone crossed z=-2.20 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-11 00:00:00",
+        "z_score": 2.198,
+        "direction": "up",
+        "description": "tone crossed z=2.20 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.38,
+    "calibrated_probability": 0.38,
+    "extremized_probability": 0.2273,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.5455,
+    "kelly_fractional": -0.1364,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.2727,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant: Material Conflict",
+    "HIGH_NEGATIVITY",
+    "MILD_CONFLICT"
+  ],
+  "n_inflections": 9,
+  "consequences": [
+    {
+      "consequence": "By June 2026, OPEC+ will implement emergency production increases of 1.2-1.5 million barrels per day, causing Brent crude to stabilize between $95-105/barrel and reducing inflationary pressure across European Union and Asian markets by 0.4-0.6 percentage points",
+      "timeframe": "By June 2026",
+      "severity": "high",
+      "regions": [
+        "Middle East",
+        "European Union",
+        "Asia"
+      ],
+      "probability_if_event_occurs": 0.82
+    },
+    {
+      "consequence": "By July 2026, United States Strategic Petroleum Reserve will release 30-40 million barrels in coordinated action with IEA members, causing WTI-Brent spread to narrow to $2-3/barrel and dampening gasoline prices by $0.15-0.25/gallon domestically",
+      "timeframe": "By July 2026",
+      "severity": "medium",
+      "regions": [
+        "North America",
+        "Global"
+      ],
+      "probability_if_event_occurs": 0.68
+    },
+    {
+      "consequence": "By August 2026, China and India will accelerate coal-fired power generation by 12-18% to offset energy costs, delaying their Paris Agreement coal phase-down commitments by 18-24 months",
+      "timeframe": "By August 2026",
+      "severity": "medium",
+      "regions": [
+        "Asia",
+        "Global"
+      ],
+      "probability_if_event_occurs": 0.55
+    }
+  ],
+  "key_indicators": [
+    "OPEC+ Joint Ministerial Monitoring Committee meeting outcomes and production quota changes scheduled for May 5, 2026",
+    "Weekly U.S. crude oil inventory levels from EIA - watch for draws exceeding 3 million barrels/week indicating supply tightness",
+    "Goldstein Scale crossing above +0.5 sustained for 7+ days indicating material shift toward cooperation in oil-producing regions"
+  ],
+  "scenarios": [
+    {
+      "label": "Accelerated",
+      "description": "Geopolitical crisis in Persian Gulf or major pipeline disruption causes Brent crude to surge above $130/barrel by mid-May 2026, triggering emergency G7 coordination and recession fears across OECD economies with inflation spiking 2.5-3.2 percentage points",
+      "probability": 0.2,
+      "key_trigger": "Military escalation in Strait of Hormuz or sabotage of critical Saudi/UAE export infrastructure",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Base Case",
+      "description": "Oil prices remain elevated but stable in $85-95/barrel range through May 2026 as OPEC+ maintains current production quotas and demand growth moderates, with AvgTone improving toward -2.5 as diplomatic efforts contain regional tensions",
+      "probability": 0.55,
+      "key_trigger": "Continuation of current OPEC+ policy and absence of major supply disruptions",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Reversal",
+      "description": "Breakthrough in Middle East diplomatic negotiations or unexpected demand slowdown causes oil prices to decline to $72-78/barrel by late May 2026, with Goldstein scale rising above +1.5 and Material Conflict percentage dropping below 75%",
+      "probability": 0.25,
+      "key_trigger": "Major peace agreement between regional adversaries or significant global economic slowdown reducing consumption forecasts",
+      "expected_date": "May 2026"
+    }
+  ],
+  "elapsed_seconds": 42.13,
+  "timestamp": "2026-04-24T18:34:50.181276Z",
+  "error": null
+}

@@ -1,0 +1,111 @@
+{
+  "query": "Nvidia stock prices tomorrow, 25th April 2026 based on todays prices",
+  "event_description": "Nvidia stock prices tomorrow, 25th April 2026 based on todays prices",
+  "final_probability": 0.1319,
+  "raw_probability": 0.0611,
+  "calibrated_probability": 0.32,
+  "extremized_probability": 0.1319,
+  "recommendation": "NO",
+  "kelly_fraction": -0.1841,
+  "reasoning": "The strong downward trend (slope=-8.0338, strength=1.00) combined with highly negative AvgTone=-3.473 and 100% Material Conflict classification creates high conviction for continued stock price decline. Positive momentum=+5.0328 indicates the negative trend is accelerating rather than stabilizing. GKG polarity=7.18 confirms pervasive negative sentiment across media coverage. The forecast range [-240.216, -237.869] with low uncertainty=2.347 suggests the model has high confidence in continued deterioration through May 24, 2026.\n\nRationale: Trend direction is DOWN with slope=-8.0338 and maximum strength=1.00/1.0, indicating strong negative momentum. AvgTone=-3.473 reflects high conflict/negativity environment. Material Conflict events dominate at 100% (Q4), signaling severe negative coverage. GKG polarity=7.18 shows heavily negative sentiment. Momentum=+5.0328 indicates accelerating decline. Forecast range [-240.216, -237.869] projects continued downward trajectory.",
+  "reflection_notes": "Evaluation PASSED (Brier=0.0174). Probability estimate is well-calibrated. No further refinement needed.",
+  "evaluation_score": 0.0174,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "deteriorating",
+    "latest_z_score": NaN,
+    "target_mean": -3.473,
+    "target_std": 0.781,
+    "n_inflections": 0,
+    "n_significant": 0,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": -8.03381,
+    "forecast_direction": "down",
+    "forecast_strength": 1.0,
+    "forecast_momentum": 5.0328,
+    "forecast_uncertainty": 2.3469,
+    "top_inflections": []
+  },
+  "calibration_report": {
+    "raw_probability": 0.32,
+    "calibrated_probability": 0.32,
+    "extremized_probability": 0.1319,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.7362,
+    "kelly_fractional": -0.1841,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.3681,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant: Material Conflict",
+    "HIGH_NEGATIVITY"
+  ],
+  "n_inflections": 0,
+  "consequences": [
+    {
+      "consequence": "By May 2026, Nvidia will announce Q2 2026 earnings miss of 12-18% below analyst expectations, triggering institutional investor selloff exceeding $85 billion in market cap loss across semiconductor sector",
+      "timeframe": "By May 2026",
+      "severity": "high",
+      "regions": [
+        "North America",
+        "Asia-Pacific"
+      ],
+      "probability_if_event_occurs": 0.78
+    },
+    {
+      "consequence": "By June 2026, major cloud providers (Microsoft, Amazon, Google) will reduce AI infrastructure spending by 22-28%, causing Nvidia data center revenue guidance to drop 15% for fiscal year 2027",
+      "timeframe": "By June 2026",
+      "severity": "high",
+      "regions": [
+        "North America",
+        "Europe"
+      ],
+      "probability_if_event_occurs": 0.71
+    },
+    {
+      "consequence": "By July 2026, Taiwan Semiconductor Manufacturing Company will report 8-12% decline in advanced node orders from Nvidia, signaling weakening AI chip demand and triggering semiconductor supply chain contraction",
+      "timeframe": "By July 2026",
+      "severity": "medium",
+      "regions": [
+        "Asia-Pacific",
+        "Global"
+      ],
+      "probability_if_event_occurs": 0.64
+    }
+  ],
+  "key_indicators": [
+    "Daily AvgTone crossing above -2.5 threshold or falling below -5.0, indicating sentiment inflection or acceleration of negative coverage",
+    "Shift in CAMEO QuadClass from 100% Material Conflict (Q4) to emergence of Material Cooperation (Q2) events above 20%, signaling positive business developments",
+    "Nvidia options implied volatility (30-day) exceeding 55% or VIX semiconductor sector index rising above 32, confirming market pricing of continued downside risk"
+  ],
+  "scenarios": [
+    {
+      "label": "Accelerated Decline",
+      "description": "Nvidia stock drops 18-25% by May 24, 2026 as Material Conflict events intensify, AvgTone deteriorates below -5.0, and major AI customers announce project delays. Semiconductor sector enters correction territory with Nasdaq-100 declining 8-12%.",
+      "probability": 0.35,
+      "key_trigger": "Major hyperscaler announces 30%+ reduction in AI capex spending or geopolitical export restrictions on advanced chips tighten",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Base Case Deterioration",
+      "description": "Nvidia stock declines 8-14% by May 24, 2026 following current downward trend slope=-8.0338. Negative media coverage persists with AvgTone remaining below -3.0. AI demand growth slows but does not collapse, causing gradual multiple compression.",
+      "probability": 0.5,
+      "key_trigger": "Continued high Material Conflict coverage and negative sentiment polarity above 6.0 without major positive catalysts",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Sentiment Reversal",
+      "description": "Nvidia stock stabilizes with 2-5% decline by May 24, 2026 as company announces major new AI partnership or product breakthrough. AvgTone improves above -2.0 and Material Cooperation events emerge, reversing negative momentum.",
+      "probability": 0.15,
+      "key_trigger": "Nvidia announces transformative AI product launch or secures $50+ billion multi-year supply agreement with major tech consortium",
+      "expected_date": "May 2026"
+    }
+  ],
+  "elapsed_seconds": 38.83,
+  "timestamp": "2026-04-24T18:47:30.549114Z",
+  "error": null
+}

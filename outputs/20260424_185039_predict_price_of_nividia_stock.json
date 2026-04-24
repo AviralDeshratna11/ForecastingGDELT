@@ -1,0 +1,111 @@
+{
+  "query": "Predict Price of Nividia stock tomorrow",
+  "event_description": "Predict Price of Nividia stock tomorrow",
+  "final_probability": 0.1319,
+  "raw_probability": 0.0611,
+  "calibrated_probability": 0.32,
+  "extremized_probability": 0.1319,
+  "recommendation": "NO",
+  "kelly_fraction": -0.1841,
+  "reasoning": "The downward trend with slope -8.0338 and maximum strength 1.00/1.0 combined with AvgTone of -3.473 (high conflict zone) and 100% Material Conflict classification creates strong bearish signal. Positive momentum of +5.0328 indicates the decline is decelerating but not reversing. GKG polarity of 7.18 confirms negative sentiment dominance. Forecast range [-240.216, -237.869] projects continued deterioration through the 30-day horizon, justifying probability below 35%.\n\nRationale: AvgTone of -3.473 indicates high conflict/negativity environment in Nvidia-related coverage. Trend direction is DOWN with strong slope of -8.0338 and strength of 1.00/1.0, indicating persistent deterioration. 100% Material Conflict (Q4) classification signals active negative events. Positive momentum of +5.0328 suggests deceleration of decline but not reversal. GKG polarity of 7.18 (negative_score 4.50 vs positive_score 2.68) confirms bearish sentiment dominance. Forecast range of [-240.216, -237.869] projects continued downward trajectory.",
+  "reflection_notes": "Evaluation PASSED (Brier=0.0174). Probability estimate is well-calibrated. No further refinement needed.",
+  "evaluation_score": 0.0174,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "deteriorating",
+    "latest_z_score": NaN,
+    "target_mean": -3.473,
+    "target_std": 0.781,
+    "n_inflections": 0,
+    "n_significant": 0,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": -8.03381,
+    "forecast_direction": "down",
+    "forecast_strength": 1.0,
+    "forecast_momentum": 5.0328,
+    "forecast_uncertainty": 2.3469,
+    "top_inflections": []
+  },
+  "calibration_report": {
+    "raw_probability": 0.32,
+    "calibrated_probability": 0.32,
+    "extremized_probability": 0.1319,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.7362,
+    "kelly_fractional": -0.1841,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.3681,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant: Material Conflict",
+    "HIGH_NEGATIVITY"
+  ],
+  "n_inflections": 0,
+  "consequences": [
+    {
+      "consequence": "By June 2026, Nvidia will announce 12-18% reduction in Q2 2026 data center revenue guidance, triggering $85-120 billion market cap erosion and causing NASDAQ-100 to decline 3.2-4.1%",
+      "timeframe": "By June 2026",
+      "severity": "high",
+      "regions": [
+        "North America",
+        "Global"
+      ],
+      "probability_if_event_occurs": 0.78
+    },
+    {
+      "consequence": "By July 2026, institutional investors including Vanguard and BlackRock will reduce Nvidia holdings by 8-11%, reallocating $42-58 billion to defensive semiconductor positions in TSMC and Intel",
+      "timeframe": "By July 2026",
+      "severity": "medium",
+      "regions": [
+        "North America",
+        "Asia"
+      ],
+      "probability_if_event_occurs": 0.64
+    },
+    {
+      "consequence": "By August 2026, U.S. Commerce Department will impose additional export restrictions on Nvidia's H100 and H200 chips to China, reducing addressable market by $15-22 billion annually",
+      "timeframe": "By August 2026",
+      "severity": "medium",
+      "regions": [
+        "North America",
+        "East Asia"
+      ],
+      "probability_if_event_occurs": 0.52
+    }
+  ],
+  "key_indicators": [
+    "GDELT AvgTone crossing above -2.5 threshold with Z-score exceeding +1.5, indicating sentiment inflection from high conflict to mild tension environment",
+    "CAMEO QuadClass shift from 100% Material Conflict (Q4) to >40% Verbal Cooperation (Q1) or Material Cooperation (Q2), signaling narrative transition to positive corporate developments",
+    "Nvidia options market 30-day implied volatility exceeding 65% with put/call ratio above 1.4, confirming institutional hedging against further downside to $95-105 price range"
+  ],
+  "scenarios": [
+    {
+      "label": "Accelerated Decline",
+      "description": "Nvidia stock drops 22-28% by mid-May 2026 as major cloud providers (Microsoft, Amazon, Google) announce 30-40% cuts to AI infrastructure spending amid disappointing GenAI monetization. Material Conflict events intensify with regulatory investigations into Nvidia's pricing practices and antitrust concerns in EU and U.S. markets.",
+      "probability": 0.28,
+      "key_trigger": "Microsoft or Amazon announces material reduction in Azure/AWS AI capex during April earnings calls",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Base Case",
+      "description": "Nvidia stock declines 11-16% through May 24, 2026 as negative sentiment persists with AvgTone remaining below -3.0. Q1 2026 earnings meet expectations but forward guidance disappoints due to inventory buildup and competitive pressure from AMD's MI300 series capturing 8-12% data center GPU market share.",
+      "probability": 0.47,
+      "key_trigger": "Continued Material Conflict coverage with GKG polarity above 6.5 and downward trend slope maintaining -7.0 to -9.0 range",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Reversal",
+      "description": "Nvidia stock stabilizes with only 3-6% decline by May 24, 2026 as company announces breakthrough partnership with OpenAI for next-generation B100 architecture deployment, shifting CAMEO classification from Q4 Material Conflict to Q2 Material Cooperation. AvgTone recovers to -1.5 to -0.8 range.",
+      "probability": 0.25,
+      "key_trigger": "Major AI partnership announcement or unexpected positive regulatory development in U.S.-China tech relations",
+      "expected_date": "May 2026"
+    }
+  ],
+  "elapsed_seconds": 30.95,
+  "timestamp": "2026-04-24T18:50:38.053152Z",
+  "error": null
+}
