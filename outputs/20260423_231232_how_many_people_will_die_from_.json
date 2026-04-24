@@ -1,0 +1,85 @@
+{
+  "query": "How many people will die from covid 19",
+  "event_description": "How many people will die from covid 19",
+  "final_probability": 0.9138,
+  "raw_probability": 0.9138,
+  "calibrated_probability": 0.72,
+  "extremized_probability": 0.9138,
+  "recommendation": "YES",
+  "kelly_fraction": 0.2069,
+  "reasoning": "High confidence (72%) that COVID-19 deaths will continue in May 2026 given the persistent negative tone (avg -1.561) and material conflict classification, despite improving trajectory. The April 19 inflection with z=3.72 negative_score spike indicates recent mortality events driving coverage. Positive momentum (+0.0274) suggests declining severity, but the forecast remaining in negative territory [-3.238, -2.186] confirms ongoing deaths are virtually certain, just potentially at reduced rates. The z-score of 0.93 indicates near-normal levels of discussion, suggesting endemic rather than crisis-level mortality.\n\nThe downward trend in tone negativity suggests COVID-19 mortality coverage is becoming less severe or frequent, but the forecast range [-3.238, -2.186] indicates persistently negative sentiment, meaning deaths will continue but at potentially declining rates or reduced media intensity.\n\nProbability rationale: The downward trend (slope=-0.0467) with positive momentum (+0.0274) indicates improving tone around COVID-19 mortality discourse, but the April 19 negative inflection (z=3.72) and sustained negative average tone (-1.561) suggest continued mortality events are highly likely within 30 days.",
+  "reflection_notes": "Evaluation PASSED (Brier=0.0074). Probability estimate is well-calibrated. No further refinement needed.",
+  "evaluation_score": 0.0074,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 0.927,
+    "target_mean": -1.561,
+    "target_std": 0.466,
+    "n_inflections": 9,
+    "n_significant": 9,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": -0.04675,
+    "forecast_direction": "down",
+    "forecast_strength": 0.146,
+    "forecast_momentum": 0.0274,
+    "forecast_uncertainty": 1.0526,
+    "top_inflections": [
+      {
+        "date": "2026-04-19 00:00:00",
+        "z_score": 3.717,
+        "direction": "up",
+        "description": "negative_score crossed z=3.72 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-19 00:00:00",
+        "z_score": 3.527,
+        "direction": "up",
+        "description": "polarity crossed z=3.53 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-19 00:00:00",
+        "z_score": -3.253,
+        "direction": "down",
+        "description": "tone crossed z=-3.25 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-19 00:00:00",
+        "z_score": 2.474,
+        "direction": "up",
+        "description": "activity_density crossed z=2.47 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-14 00:00:00",
+        "z_score": 2.342,
+        "direction": "up",
+        "description": "num_sources crossed z=2.34 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.72,
+    "calibrated_probability": 0.72,
+    "extremized_probability": 0.9138,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.8276,
+    "kelly_fractional": 0.2069,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.4138,
+    "recommendation": "YES"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Material Conflict",
+    "MODERATE_NEGATIVITY"
+  ],
+  "n_inflections": 9,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 41.13,
+  "timestamp": "2026-04-23T23:12:30.672514Z",
+  "error": null
+}

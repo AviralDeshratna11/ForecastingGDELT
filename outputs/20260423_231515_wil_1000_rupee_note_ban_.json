@@ -1,0 +1,86 @@
+{
+  "query": "wil 1000 rupee note ban ",
+  "event_description": "wil 1000 rupee note ban ",
+  "final_probability": 0.0405,
+  "raw_probability": 0.0897,
+  "calibrated_probability": 0.22,
+  "extremized_probability": 0.0405,
+  "recommendation": "NO",
+  "kelly_fraction": -0.2297,
+  "reasoning": "The 22% probability reflects structural policy implementation barriers despite media attention: the negative momentum (-0.1717) and improving tone (z=2.07, recent -0.20 vs -2.249 baseline) indicate speculation cooling rather than policy crystallizing. The 23 verbal conflict events represent debate, not governmental action signals. Previous cycle overestimated (28%) by not weighting the gap between media speculation and actual policy implementation timelines in major economies; adjusting downward to capture that large-scale currency reforms require 6-12 month preparation periods rarely reflected in 30-day media cycles.\n\nThe upward trend reflects increased media discussion and speculation about currency policy, but represents debate volume rather than policy implementation likelihood; the 23 verbal conflict events and 19 material conflict events indicate ongoing controversy without concrete governmental action signals\n\nProbability rationale: Despite upward trend in media coverage (slope +0.5424), the negative momentum (-0.1717) indicates decelerating interest, and the improving tone (z=2.07, recent 7-day avg -0.20 vs baseline -2.249) suggests the controversy is cooling rather than escalating toward policy action",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.9206, improvement=-0.0855). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.9206,
+  "iterations": 2,
+  "trend_analysis": {
+    "overall_trend": "improving",
+    "latest_z_score": 2.068,
+    "target_mean": -2.249,
+    "target_std": 1.268,
+    "n_inflections": 9,
+    "n_significant": 9,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.5424,
+    "forecast_direction": "up",
+    "forecast_strength": 0.506,
+    "forecast_momentum": -0.1717,
+    "forecast_uncertainty": 3.5268,
+    "top_inflections": [
+      {
+        "date": "2026-04-15 00:00:00",
+        "z_score": -2.964,
+        "direction": "down",
+        "description": "quad_class crossed z=-2.96 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-17 00:00:00",
+        "z_score": 2.273,
+        "direction": "up",
+        "description": "num_articles_evt crossed z=2.27 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-17 00:00:00",
+        "z_score": 2.273,
+        "direction": "up",
+        "description": "num_mentions crossed z=2.27 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-17 00:00:00",
+        "z_score": 2.161,
+        "direction": "up",
+        "description": "num_sources crossed z=2.16 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-15 00:00:00",
+        "z_score": 2.16,
+        "direction": "up",
+        "description": "avg_tone crossed z=2.16 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.22,
+    "calibrated_probability": 0.22,
+    "extremized_probability": 0.0405,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.9189,
+    "kelly_fractional": -0.2297,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.4595,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Verbal Conflict",
+    "MODERATE_NEGATIVITY",
+    "MILD_CONFLICT"
+  ],
+  "n_inflections": 9,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 66.81,
+  "timestamp": "2026-04-23T23:15:14.244891Z",
+  "error": null
+}

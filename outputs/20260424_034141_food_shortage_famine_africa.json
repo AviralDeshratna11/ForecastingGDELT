@@ -1,0 +1,85 @@
+{
+  "query": "food shortage famine Africa",
+  "event_description": "food shortage famine Africa",
+  "final_probability": 0.8681,
+  "raw_probability": 0.8681,
+  "calibrated_probability": 0.68,
+  "extremized_probability": 0.8681,
+  "recommendation": "YES",
+  "kelly_fraction": 0.1841,
+  "reasoning": "Confidence moderate-high due to clear structural signals: massive media attention spike (z=+4.28 sources, z=+3.33 mentions) confirms genuine crisis, while 80% verbal+material conflict indicates active deterioration. However, recent positive tone inflection (+3.59 z-score April 24) and upward trend create uncertainty about timing\u2014crisis is ongoing but acute phase may be temporarily stabilizing. Negative momentum (-0.0138) suggests improvement is fragile. Previous Brier score 0.48 indicates need to weight high-magnitude volume signals more heavily than sentiment oscillations.\n\nThe upward trend (slope +0.0236) with negative momentum (-0.0138) suggests media tone is slowly improving from crisis peaks, but deceleration indicates fragility\u2014likely reflecting temporary humanitarian interventions or seasonal harvest improvements that mask underlying structural food insecurity vulnerabilities across multiple African regions.\n\nProbability rationale: Recent tone improvement (+3.59 z-score on April 24) and upward trend contradict high verbal/material conflict (80% combined), but massive media spike (z=+4.28 sources, z=+3.33 mentions on Feb 26) and sustained negative polarity (z=+3.63) indicate ongoing crisis with episodic acute phases\u2014probability elevated above neutral due to structural food insecurity persisting despite temporary sentiment relief.",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.7536, improvement=-0.2755). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.7536,
+  "iterations": 2,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": -0.121,
+    "target_mean": -1.274,
+    "target_std": 2.292,
+    "n_inflections": 42,
+    "n_significant": 42,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.02357,
+    "forecast_direction": "up",
+    "forecast_strength": 0.018,
+    "forecast_momentum": -0.0138,
+    "forecast_uncertainty": 4.0191,
+    "top_inflections": [
+      {
+        "date": "2026-02-26 00:00:00",
+        "z_score": 4.282,
+        "direction": "up",
+        "description": "num_sources crossed z=4.28 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-05 00:00:00",
+        "z_score": 3.963,
+        "direction": "up",
+        "description": "negative_score crossed z=3.96 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-24 00:00:00",
+        "z_score": -3.683,
+        "direction": "down",
+        "description": "num_articles_gkg crossed z=-3.68 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-24 00:00:00",
+        "z_score": 3.664,
+        "direction": "up",
+        "description": "activity_density crossed z=3.66 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-05 00:00:00",
+        "z_score": 3.632,
+        "direction": "up",
+        "description": "polarity crossed z=3.63 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.68,
+    "calibrated_probability": 0.68,
+    "extremized_probability": 0.8681,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.7362,
+    "kelly_fractional": 0.1841,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.3681,
+    "recommendation": "YES"
+  },
+  "thematic_clusters": [
+    "Dominant: Verbal Conflict",
+    "MODERATE_NEGATIVITY"
+  ],
+  "n_inflections": 42,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 88.59,
+  "timestamp": "2026-04-24T03:41:39.402055Z",
+  "error": null
+}

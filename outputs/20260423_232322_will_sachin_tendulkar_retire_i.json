@@ -1,0 +1,67 @@
+{
+  "query": "will sachin tendulkar retire in the  upcoming t20 ",
+  "event_description": "will sachin tendulkar retire in the  upcoming t20 ",
+  "final_probability": 0.0022,
+  "raw_probability": 0.02,
+  "calibrated_probability": 0.08,
+  "extremized_probability": 0.0022,
+  "recommendation": "NO",
+  "kelly_fraction": -0.2489,
+  "reasoning": "The probability is set at 8% because Tendulkar has been retired since 2013 and the downward trend (slope=-0.0737) with weak strength (0.06) indicates this is speculative noise rather than substantive development. The recent z=3.20 source spike on April 22 likely reflects anniversary coverage or fan-driven speculation rather than genuine retirement planning. The slightly positive momentum (+0.0025) is negligible and insufficient to suggest any real comeback possibility.\n\nThe downward trend indicates declining media attention and narrative momentum around Tendulkar retirement speculation, suggesting this is not an active developing story but rather periodic nostalgic or speculative coverage with no substantive basis.\n\nProbability rationale: The downward trend (slope=-0.0737) combined with low trend strength (0.06/1.0) and the fact that Sachin Tendulkar retired from all cricket formats in 2013 makes a comeback retirement announcement extremely unlikely; recent source spikes likely reflect retrospective coverage or speculation rather than genuine retirement planning.",
+  "reflection_notes": "Evaluation PASSED (Brier=0.0000). Probability estimate is well-calibrated. No further refinement needed.",
+  "evaluation_score": 0.0,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 0.931,
+    "target_mean": 1.635,
+    "target_std": 2.134,
+    "n_inflections": 2,
+    "n_significant": 2,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": -0.07372,
+    "forecast_direction": "down",
+    "forecast_strength": 0.059,
+    "forecast_momentum": 0.0025,
+    "forecast_uncertainty": 4.1152,
+    "top_inflections": [
+      {
+        "date": "2026-04-22 00:00:00",
+        "z_score": 3.198,
+        "direction": "up",
+        "description": "num_sources crossed z=3.20 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-14 00:00:00",
+        "z_score": 3.052,
+        "direction": "up",
+        "description": "num_sources crossed z=3.05 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.08,
+    "calibrated_probability": 0.08,
+    "extremized_probability": 0.0022,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.9956,
+    "kelly_fractional": -0.2489,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.4978,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Verbal Cooperation",
+    "POSITIVE_COVERAGE"
+  ],
+  "n_inflections": 2,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 39.33,
+  "timestamp": "2026-04-23T23:23:21.336598Z",
+  "error": null
+}

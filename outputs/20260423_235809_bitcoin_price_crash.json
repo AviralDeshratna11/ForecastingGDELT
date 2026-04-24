@@ -1,0 +1,86 @@
+{
+  "query": "Bitcoin price crash",
+  "event_description": "Bitcoin price crash",
+  "final_probability": 0.0465,
+  "raw_probability": 0.0465,
+  "calibrated_probability": 0.23,
+  "extremized_probability": 0.0465,
+  "recommendation": "NO",
+  "kelly_fraction": -0.2268,
+  "reasoning": "The upward trend (+0.0945 slope) with seven statistically significant positive inflections since mid-March, improving weekly tone (+0.124), and declining negative sentiment (z=-2.09) indicate crash narratives are weakening structurally. However, negative momentum (-0.0229) shows deceleration risk, 97% Material Conflict classification reflects persistent crisis framing, and high uncertainty (1.786) with mean tone still deeply negative (-3.207) prevents higher confidence. The probability of 0.23 reflects that improving signals reduce crash likelihood below baseline but structural vulnerabilities remain.\n\nThe upward trend with slope +0.0945 indicates sentiment around Bitcoin price crash narratives is improving (becoming less negative), suggesting market stabilization and reduced crash probability over the 30-day horizon despite negative momentum showing deceleration.\n\nProbability rationale: Upward trend (+0.0945 slope) with improving tone (weekly +0.124), declining negative sentiment (z=-2.09 on Apr 11), and positive Goldstein scale inflection (z=+2.23 on Mar 28) all indicate decreasing crash risk, not increasing.",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.9092, improvement=-0.0741). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.9092,
+  "iterations": 2,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": -0.506,
+    "target_mean": -3.207,
+    "target_std": 0.907,
+    "n_inflections": 7,
+    "n_significant": 7,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.0945,
+    "forecast_direction": "up",
+    "forecast_strength": 0.165,
+    "forecast_momentum": -0.0229,
+    "forecast_uncertainty": 1.7859,
+    "top_inflections": [
+      {
+        "date": "2026-04-05 00:00:00",
+        "z_score": 2.243,
+        "direction": "up",
+        "description": "polarity crossed z=2.24 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-28 00:00:00",
+        "z_score": 2.23,
+        "direction": "up",
+        "description": "goldstein_scale crossed z=2.23 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-16 00:00:00",
+        "z_score": 2.216,
+        "direction": "up",
+        "description": "activity_density crossed z=2.22 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-11 00:00:00",
+        "z_score": 2.18,
+        "direction": "up",
+        "description": "tone crossed z=2.18 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-01 00:00:00",
+        "z_score": 2.106,
+        "direction": "up",
+        "description": "activity_density crossed z=2.11 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.23,
+    "calibrated_probability": 0.23,
+    "extremized_probability": 0.0465,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.907,
+    "kelly_fractional": -0.2268,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.4535,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant: Material Conflict",
+    "HIGH_NEGATIVITY",
+    "MILD_CONFLICT"
+  ],
+  "n_inflections": 7,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 66.65,
+  "timestamp": "2026-04-23T23:58:07.687793Z",
+  "error": null
+}

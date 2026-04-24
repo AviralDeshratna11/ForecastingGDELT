@@ -1,0 +1,86 @@
+{
+  "query": "oil price spike",
+  "event_description": "oil price spike",
+  "final_probability": 0.1319,
+  "raw_probability": 0.1319,
+  "calibrated_probability": 0.32,
+  "extremized_probability": 0.1319,
+  "recommendation": "NO",
+  "kelly_fraction": -0.1841,
+  "reasoning": "The weak trend strength (0.10/1.0) combined with negative momentum (-0.0081) and declining media volume (241/day vs 1654 peak) indicates oil price spike concerns are fading rather than intensifying. While AvgTone remains negative at -3.320 and Material Conflict is high at 98%, the recent Goldstein Scale improvement to +0.597 and multiple positive inflections in late March/early April suggest the acute crisis phase has passed. The forecast range of -2.381 to -1.138 for tone indicates continued negativity but within manageable bounds, not extreme crisis levels that would drive oil price spikes.\n\nRationale: Despite upward trend (slope +0.0386), the trend strength is extremely weak (0.10/1.0) and momentum is negative (-0.0081), indicating deceleration. AvgTone remains in high conflict territory at -3.320 (7-day mean) with recent z-score of -1.954, showing persistent negativity but not extreme outlier status. Material Conflict dominates at 98% of events, but Goldstein Scale has improved to +0.597 recently from mean of -0.344, suggesting conflict-generating events are moderating. Media volume dropped significantly to 241/day from peak of 1654, indicating waning attention to oil price volatility. The weak upward trend with negative momentum and declining media coverage suggests oil price spike risk is subsiding rather than building.",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.7536, improvement=-0.1565). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.7536,
+  "iterations": 2,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": -1.954,
+    "target_mean": -3.299,
+    "target_std": 0.763,
+    "n_inflections": 9,
+    "n_significant": 9,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.03862,
+    "forecast_direction": "up",
+    "forecast_strength": 0.1,
+    "forecast_momentum": -0.0081,
+    "forecast_uncertainty": 1.2429,
+    "top_inflections": [
+      {
+        "date": "2026-04-05 00:00:00",
+        "z_score": 2.354,
+        "direction": "up",
+        "description": "polarity crossed z=2.35 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-28 00:00:00",
+        "z_score": 2.262,
+        "direction": "up",
+        "description": "goldstein_scale crossed z=2.26 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-16 00:00:00",
+        "z_score": 2.207,
+        "direction": "up",
+        "description": "activity_density crossed z=2.21 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-06 00:00:00",
+        "z_score": -2.205,
+        "direction": "down",
+        "description": "avg_tone crossed z=-2.20 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-11 00:00:00",
+        "z_score": 2.198,
+        "direction": "up",
+        "description": "tone crossed z=2.20 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.32,
+    "calibrated_probability": 0.32,
+    "extremized_probability": 0.1319,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.7362,
+    "kelly_fractional": -0.1841,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.3681,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant: Material Conflict",
+    "HIGH_NEGATIVITY",
+    "MILD_CONFLICT"
+  ],
+  "n_inflections": 9,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 77.19,
+  "timestamp": "2026-04-24T16:59:35.770716Z",
+  "error": null
+}

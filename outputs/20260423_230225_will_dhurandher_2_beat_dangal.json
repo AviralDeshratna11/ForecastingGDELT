@@ -1,0 +1,67 @@
+{
+  "query": "Will Dhurandher 2 beat Dangal",
+  "event_description": "Will Dhurandher 2 beat Dangal",
+  "final_probability": 0.1319,
+  "raw_probability": 0.1319,
+  "calibrated_probability": 0.32,
+  "extremized_probability": 0.1319,
+  "recommendation": "NO",
+  "kelly_fraction": -0.1841,
+  "reasoning": "The probability of 32% reflects the clear downward trend (slope=-0.0737) and declining recent tone (0.95 vs 1.635 average), indicating weakening competitive position. However, the two significant inflection points on April 14 and 22 (z>3.0 for num_sources) show volatile media attention that could enable partial recovery. The weak trend strength (0.06/1.0) and positive but minimal momentum (+0.0025) suggest the outcome remains uncertain but tilted against Dhurandher 2 beating Dangal's benchmark within the 30-day window.\n\nThe negative slope of -0.0737 suggests declining media attention, public interest, or competitive indicators for Dhurandher 2 relative to Dangal's benchmark performance, with forecast range extending to -3.652 indicating potential for significant underperformance.\n\nProbability rationale: The downward trend (slope=-0.0737) combined with declining recent tone (7-day avg 0.95 vs 30-day avg 1.635) and weak trend strength (0.06/1.0) indicates diminishing momentum for Dhurandher 2's competitive position against Dangal.",
+  "reflection_notes": "Evaluation PASSED (Brier=0.0174). Probability estimate is well-calibrated. No further refinement needed.",
+  "evaluation_score": 0.0174,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 0.931,
+    "target_mean": 1.635,
+    "target_std": 2.134,
+    "n_inflections": 2,
+    "n_significant": 2,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": -0.07372,
+    "forecast_direction": "down",
+    "forecast_strength": 0.059,
+    "forecast_momentum": 0.0025,
+    "forecast_uncertainty": 4.1152,
+    "top_inflections": [
+      {
+        "date": "2026-04-22 00:00:00",
+        "z_score": 3.198,
+        "direction": "up",
+        "description": "num_sources crossed z=3.20 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-14 00:00:00",
+        "z_score": 3.052,
+        "direction": "up",
+        "description": "num_sources crossed z=3.05 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.32,
+    "calibrated_probability": 0.32,
+    "extremized_probability": 0.1319,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.7362,
+    "kelly_fractional": -0.1841,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.3681,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Verbal Cooperation",
+    "POSITIVE_COVERAGE"
+  ],
+  "n_inflections": 2,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 41.02,
+  "timestamp": "2026-04-23T23:02:24.007310Z",
+  "error": null
+}

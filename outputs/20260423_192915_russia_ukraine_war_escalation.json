@@ -1,0 +1,122 @@
+{
+  "query": "Russia Ukraine war escalation",
+  "event_description": "Russia Ukraine war escalation",
+  "final_probability": 0.9697,
+  "raw_probability": 0.9697,
+  "calibrated_probability": 0.8,
+  "extremized_probability": 0.9697,
+  "recommendation": "YES",
+  "kelly_fraction": 0.2348,
+  "reasoning": "The simultaneous 3.5+ sigma spikes across multiple independent metrics (articles, mentions, sources) on April 1-3 represent statistically extreme events that historically correlate with major conflict developments. The 130 conflict-related events (78 verbal + 52 material) versus 52 cooperation events, combined with positive TSFM slope indicating worsening conditions trajectory, strongly support escalation already underway or imminent within 30-day horizon.",
+  "reflection_notes": "Evaluation PASSED (Brier=0.0009). Probability estimate is well-calibrated. No further refinement needed.",
+  "evaluation_score": 0.0009,
+  "iterations": 3,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 1.802,
+    "target_mean": -2.189,
+    "target_std": 1.634,
+    "n_inflections": 53,
+    "n_significant": 53,
+    "forecast_model": "NaiveLinear",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.10409,
+    "forecast_uncertainty": 3.6652,
+    "top_inflections": [
+      {
+        "date": "2026-04-03 00:00:00",
+        "column": "num_articles_evt",
+        "z_score": 3.588,
+        "direction": "up",
+        "description": "num_articles_evt crossed z=3.59 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-03 00:00:00",
+        "column": "num_mentions",
+        "z_score": 3.588,
+        "direction": "up",
+        "description": "num_mentions crossed z=3.59 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-03 00:00:00",
+        "column": "num_sources",
+        "z_score": 3.549,
+        "direction": "up",
+        "description": "num_sources crossed z=3.55 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-01 00:00:00",
+        "column": "goldstein_scale",
+        "z_score": 2.951,
+        "direction": "up",
+        "description": "goldstein_scale crossed z=2.95 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-01 00:00:00",
+        "column": "avg_tone",
+        "z_score": 2.951,
+        "direction": "up",
+        "description": "avg_tone crossed z=2.95 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-23 00:00:00",
+        "column": "num_sources",
+        "z_score": 2.912,
+        "direction": "up",
+        "description": "num_sources crossed z=2.91 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-23 00:00:00",
+        "column": "num_articles_evt",
+        "z_score": 2.89,
+        "direction": "up",
+        "description": "num_articles_evt crossed z=2.89 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-23 00:00:00",
+        "column": "num_mentions",
+        "z_score": 2.89,
+        "direction": "up",
+        "description": "num_mentions crossed z=2.89 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-23 00:00:00",
+        "column": "num_articles_evt",
+        "z_score": 2.825,
+        "direction": "up",
+        "description": "num_articles_evt crossed z=2.83 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-23 00:00:00",
+        "column": "num_mentions",
+        "z_score": 2.825,
+        "direction": "up",
+        "description": "num_mentions crossed z=2.83 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.8,
+    "calibrated_probability": 0.8,
+    "extremized_probability": 0.9697,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.9394,
+    "kelly_fractional": 0.2348,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.4697,
+    "recommendation": "YES"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Verbal Conflict",
+    "MODERATE_NEGATIVITY",
+    "MILD_CONFLICT"
+  ],
+  "n_inflections": 53,
+  "consequences": [],
+  "scenarios": [],
+  "elapsed_seconds": 138.87,
+  "timestamp": "2026-04-23T19:29:14.586347Z",
+  "error": null
+}

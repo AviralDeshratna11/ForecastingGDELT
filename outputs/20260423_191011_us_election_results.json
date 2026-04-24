@@ -1,0 +1,33 @@
+{
+  "query": "US election results",
+  "event_description": "US election results",
+  "final_probability": 0.5,
+  "raw_probability": 0.5,
+  "calibrated_probability": 0.5,
+  "extremized_probability": 0.5,
+  "recommendation": "NO_TRADE",
+  "kelly_fraction": 0.0,
+  "reasoning": "",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.2500, improvement=0.0000). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.25,
+  "iterations": 2,
+  "trend_analysis": {},
+  "calibration_report": {
+    "raw_probability": 0.5,
+    "calibrated_probability": 0.5,
+    "extremized_probability": 0.5,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.0,
+    "kelly_fractional": 0.0,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.0,
+    "recommendation": "NO_TRADE"
+  },
+  "thematic_clusters": [],
+  "n_inflections": 0,
+  "elapsed_seconds": 4.8,
+  "timestamp": "2026-04-23T19:10:11.913231Z",
+  "error": null
+}

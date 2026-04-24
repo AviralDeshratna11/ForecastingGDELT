@@ -1,0 +1,86 @@
+{
+  "query": "AI regulation Congress",
+  "event_description": "AI regulation Congress",
+  "final_probability": 0.5,
+  "raw_probability": 0.5,
+  "calibrated_probability": 0.5,
+  "extremized_probability": 0.5,
+  "recommendation": "NO_TRADE",
+  "kelly_fraction": 0.0,
+  "reasoning": "The STABLE trend classification (z=0.26) and Material Conflict events indicate sustained Congressional engagement without breakthrough momentum. Structural signals show deliberation rather than legislative velocity: goldstein_scale volatility reflects negotiation cycles, not resolution. The deteriorating tone forecast suggests increasing difficulty reaching consensus, while positive_score spike indicates isolated cooperative moments insufficient to overcome systemic gridlock in election-year Congress.",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.2500, improvement=0.0000). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.25,
+  "iterations": 2,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 0.262,
+    "target_mean": -2.011,
+    "target_std": 0.409,
+    "n_inflections": 5,
+    "n_significant": 5,
+    "forecast_model": "NaiveLinear",
+    "forecast_horizon": 30,
+    "forecast_slope": -0.02888,
+    "forecast_uncertainty": 1.0613,
+    "top_inflections": [
+      {
+        "date": "2026-04-11 00:00:00",
+        "column": "goldstein_scale",
+        "z_score": -2.912,
+        "direction": "down",
+        "description": "goldstein_scale crossed z=-2.91 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-20 00:00:00",
+        "column": "goldstein_scale",
+        "z_score": 2.892,
+        "direction": "up",
+        "description": "goldstein_scale crossed z=2.89 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-12 00:00:00",
+        "column": "positive_score",
+        "z_score": 2.683,
+        "direction": "up",
+        "description": "positive_score crossed z=2.68 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-15 00:00:00",
+        "column": "goldstein_scale",
+        "z_score": -2.669,
+        "direction": "down",
+        "description": "goldstein_scale crossed z=-2.67 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-22 00:00:00",
+        "column": "activity_density",
+        "z_score": 2.048,
+        "direction": "up",
+        "description": "activity_density crossed z=2.05 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.5,
+    "calibrated_probability": 0.5,
+    "extremized_probability": 0.5,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.0,
+    "kelly_fractional": 0.0,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.0,
+    "recommendation": "NO_TRADE"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Material Conflict",
+    "MODERATE_NEGATIVITY"
+  ],
+  "n_inflections": 5,
+  "consequences": [],
+  "scenarios": [],
+  "elapsed_seconds": 63.07,
+  "timestamp": "2026-04-23T19:36:34.421104Z",
+  "error": null
+}

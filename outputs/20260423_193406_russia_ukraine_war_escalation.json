@@ -1,0 +1,121 @@
+{
+  "query": "Russia Ukraine war escalation",
+  "event_description": "Russia Ukraine war escalation",
+  "final_probability": 0.5,
+  "raw_probability": 0.5,
+  "calibrated_probability": 0.5,
+  "extremized_probability": 0.5,
+  "recommendation": "NO_TRADE",
+  "kelly_fraction": 0.0,
+  "reasoning": "The z=3.44 spikes in coverage volume (articles, mentions, sources) on 2026-02-24 signal significant events warranting attention, but the stable avg_tone (-2.683) and improving TSFM slope (0.0142) suggest these represent periodic intensity fluctuations rather than fundamental escalation. The positive_score anomaly (z=4.15) introduces uncertainty about potential de-escalation, balancing escalation risk to 50-50.",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.2500, improvement=0.0000). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.25,
+  "iterations": 2,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 2.095,
+    "target_mean": -2.683,
+    "target_std": 0.391,
+    "n_inflections": 27,
+    "n_significant": 27,
+    "forecast_model": "NaiveLinear",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.01421,
+    "forecast_uncertainty": 0.7786,
+    "top_inflections": [
+      {
+        "date": "2026-04-12 00:00:00",
+        "column": "positive_score",
+        "z_score": 4.146,
+        "direction": "up",
+        "description": "positive_score crossed z=4.15 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "column": "num_articles_evt",
+        "z_score": 3.444,
+        "direction": "up",
+        "description": "num_articles_evt crossed z=3.44 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "column": "num_mentions",
+        "z_score": 3.443,
+        "direction": "up",
+        "description": "num_mentions crossed z=3.44 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "column": "num_sources",
+        "z_score": 3.233,
+        "direction": "up",
+        "description": "num_sources crossed z=3.23 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-23 00:00:00",
+        "column": "positive_score",
+        "z_score": 2.968,
+        "direction": "up",
+        "description": "positive_score crossed z=2.97 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-13 00:00:00",
+        "column": "avg_tone",
+        "z_score": 2.967,
+        "direction": "up",
+        "description": "avg_tone crossed z=2.97 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-01 00:00:00",
+        "column": "negative_score",
+        "z_score": 2.912,
+        "direction": "up",
+        "description": "negative_score crossed z=2.91 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-01 00:00:00",
+        "column": "avg_tone",
+        "z_score": -2.846,
+        "direction": "down",
+        "description": "avg_tone crossed z=-2.85 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-28 00:00:00",
+        "column": "activity_density",
+        "z_score": -2.781,
+        "direction": "down",
+        "description": "activity_density crossed z=-2.78 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-09 00:00:00",
+        "column": "positive_score",
+        "z_score": -2.678,
+        "direction": "down",
+        "description": "positive_score crossed z=-2.68 (below 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.5,
+    "calibrated_probability": 0.5,
+    "extremized_probability": 0.5,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.0,
+    "kelly_fractional": 0.0,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.0,
+    "recommendation": "NO_TRADE"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Material Conflict",
+    "MODERATE_NEGATIVITY"
+  ],
+  "n_inflections": 27,
+  "consequences": [],
+  "scenarios": [],
+  "elapsed_seconds": 77.73,
+  "timestamp": "2026-04-23T19:34:05.912221Z",
+  "error": null
+}

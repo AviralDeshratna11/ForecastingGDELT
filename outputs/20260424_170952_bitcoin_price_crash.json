@@ -1,0 +1,143 @@
+{
+  "query": "Bitcoin price crash",
+  "event_description": "Bitcoin price crash",
+  "final_probability": 0.1319,
+  "raw_probability": 0.1319,
+  "calibrated_probability": 0.32,
+  "extremized_probability": 0.1319,
+  "recommendation": "NO",
+  "kelly_fraction": -0.1841,
+  "reasoning": "The upward trend (slope +0.0386) with recent Goldstein scale inflection (z=+2.15 on April 24) indicates improving sentiment despite persistent negative tone (-3.320). Material Conflict at 98% reflects past crash coverage, but the positive trajectory in cooperation-generating events and negative momentum (-0.0081) suggests the acute crisis phase is decelerating. The z-score of -1.954 remains below statistical significance threshold, indicating current negativity is not an extreme outlier. Forecast range of [-2.381, -1.138] projects continued improvement over 30 days.\n\nRationale: AvgTone is -3.320 (7-day), indicating persistent negativity but within typical conflict range. Goldstein scale recent value of 0.597 shows shift toward cooperation-generating events (z=+2.15 on 2026-04-24). Trend direction is UP with slope +0.0386, indicating improving sentiment trajectory. However, momentum is negative (-0.0081), suggesting deceleration. Material Conflict dominates at 98% of events, but the upward trend in tone and Goldstein scale, combined with recent inflection points showing positive shifts, indicates the crash narrative is stabilizing rather than intensifying. Current z-score of -1.954 is below the 2.0 threshold for statistical significance.",
+  "reflection_notes": "Maximum iterations reached. Final Brier=0.7536.",
+  "evaluation_score": 0.7536,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": -1.954,
+    "target_mean": -3.299,
+    "target_std": 0.763,
+    "n_inflections": 9,
+    "n_significant": 9,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.03862,
+    "forecast_direction": "up",
+    "forecast_strength": 0.1,
+    "forecast_momentum": -0.0081,
+    "forecast_uncertainty": 1.2429,
+    "top_inflections": [
+      {
+        "date": "2026-04-05 00:00:00",
+        "z_score": 2.354,
+        "direction": "up",
+        "description": "polarity crossed z=2.35 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-28 00:00:00",
+        "z_score": 2.262,
+        "direction": "up",
+        "description": "goldstein_scale crossed z=2.26 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-16 00:00:00",
+        "z_score": 2.207,
+        "direction": "up",
+        "description": "activity_density crossed z=2.21 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-06 00:00:00",
+        "z_score": -2.205,
+        "direction": "down",
+        "description": "avg_tone crossed z=-2.20 (below 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-11 00:00:00",
+        "z_score": 2.198,
+        "direction": "up",
+        "description": "tone crossed z=2.20 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.32,
+    "calibrated_probability": 0.32,
+    "extremized_probability": 0.1319,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.7362,
+    "kelly_fractional": -0.1841,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.3681,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant: Material Conflict",
+    "HIGH_NEGATIVITY",
+    "MILD_CONFLICT"
+  ],
+  "n_inflections": 9,
+  "consequences": [
+    {
+      "consequence": "By June 2026, the U.S. Securities and Exchange Commission will implement emergency custody requirements for crypto exchanges, causing 12-18% of smaller platforms to exit the market and consolidating 65% of trading volume into the top 5 exchanges",
+      "timeframe": "By June 2026",
+      "severity": "high",
+      "regions": [
+        "North America",
+        "Europe"
+      ],
+      "probability_if_event_occurs": 0.82
+    },
+    {
+      "consequence": "By July 2026, institutional investors including BlackRock and Fidelity will reduce crypto ETF holdings by 25-35%, reallocating $45-60 billion into gold and Treasury securities, driving 10-year yield down 15-20 basis points",
+      "timeframe": "By July 2026",
+      "severity": "medium",
+      "regions": [
+        "Global",
+        "North America"
+      ],
+      "probability_if_event_occurs": 0.68
+    },
+    {
+      "consequence": "By August 2026, El Salvador will restructure its Bitcoin reserve holdings, liquidating 40-50% of national Bitcoin holdings to meet IMF loan conditions, triggering 8-12% depreciation in regional emerging market currencies",
+      "timeframe": "By August 2026",
+      "severity": "medium",
+      "regions": [
+        "Latin America",
+        "Caribbean"
+      ],
+      "probability_if_event_occurs": 0.55
+    }
+  ],
+  "key_indicators": [
+    "GDELT AvgTone crossing above -2.0 threshold for Bitcoin-related coverage, indicating shift from high conflict to mild tension environment",
+    "Tether (USDT) market capitalization and daily redemption volumes exceeding $2 billion for 3 consecutive days, signaling potential stablecoin stress",
+    "Goldstein Scale maintaining above +1.0 for 7 consecutive days with Material Conflict (Q4) percentage dropping below 75%, confirming cooperation-generating events dominating"
+  ],
+  "scenarios": [
+    {
+      "label": "Accelerated",
+      "description": "Bitcoin drops below $35,000 by mid-May 2026 as Tether faces liquidity crisis, triggering cascading liquidations across DeFi protocols. Total crypto market capitalization falls 55-65%, with Coinbase and Binance suspending withdrawals for 48-72 hours. U.S. Congress passes emergency legislation banning algorithmic stablecoins within 90 days.",
+      "probability": 0.2,
+      "key_trigger": "Tether fails to maintain 1:1 USD peg or major exchange insolvency revealed",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Base Case",
+      "description": "Bitcoin stabilizes in $48,000-$52,000 range through May 2026 as media coverage tone continues improving (slope +0.0386). Regulatory clarity emerges from G7 meetings, with coordinated framework announced but not implemented. Trading volumes decline 30-35% from peak, but no systemic failures occur. Institutional interest remains subdued but stable.",
+      "probability": 0.55,
+      "key_trigger": "Current upward tone trend continues with no major exchange failures",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Reversal",
+      "description": "Bitcoin surges to $68,000-$72,000 by late May 2026 as Federal Reserve signals rate cuts in Q3 2026 and China announces pilot program allowing Hong Kong banks to custody Bitcoin. Goldstein scale acceleration continues, AvgTone crosses into positive territory (+1.5 to +2.0). Institutional inflows resume at $8-12 billion monthly, reversing crash narrative completely.",
+      "probability": 0.25,
+      "key_trigger": "Major central bank policy shift toward monetary easing or China regulatory reversal",
+      "expected_date": "May 2026"
+    }
+  ],
+  "elapsed_seconds": 54.12,
+  "timestamp": "2026-04-24T17:09:50.775077Z",
+  "error": null
+}

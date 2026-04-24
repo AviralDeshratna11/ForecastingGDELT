@@ -1,0 +1,85 @@
+{
+  "query": "US Trump tariff trade war",
+  "event_description": "US Trump tariff trade war",
+  "final_probability": 0.9595,
+  "raw_probability": 0.9595,
+  "calibrated_probability": 0.78,
+  "extremized_probability": 0.9595,
+  "recommendation": "YES",
+  "kelly_fraction": 0.2297,
+  "reasoning": "The 78% probability reflects the combination of persistently negative tone (-2.683), significant z-score (2.10), and 91 material conflict events indicating entrenched trade war dynamics. The flat trend with slight positive slope (+0.0154) and negative momentum (-0.0020) suggests the conflict has stabilized at high intensity rather than escalating dramatically or de-escalating. The April 12 positive score inflection (z=4.15) likely represents temporary negotiation optimism that failed to materialize, reinforcing the base case of sustained conflict through May 2026.\n\nThe flat trend with minimal positive slope indicates the US-Trump tariff trade war has reached a sustained plateau of high conflict intensity, with no signs of resolution but continued aggressive trade policy implementation through May 2026.\n\nProbability rationale: The highly negative average tone (-2.683) with significant z-score (2.10) and 91 material conflict events indicate ongoing escalation, while the flat trend with slight positive slope (+0.0154) suggests sustained high-intensity trade conflict rather than de-escalation.",
+  "reflection_notes": "Evaluation PASSED (Brier=0.0016). Probability estimate is well-calibrated. No further refinement needed.",
+  "evaluation_score": 0.0016,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 2.102,
+    "target_mean": -2.683,
+    "target_std": 0.391,
+    "n_inflections": 27,
+    "n_significant": 27,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.01541,
+    "forecast_direction": "flat",
+    "forecast_strength": 0.059,
+    "forecast_momentum": -0.002,
+    "forecast_uncertainty": 0.7223,
+    "top_inflections": [
+      {
+        "date": "2026-04-12 00:00:00",
+        "z_score": 4.146,
+        "direction": "up",
+        "description": "positive_score crossed z=4.15 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "z_score": 3.444,
+        "direction": "up",
+        "description": "num_articles_evt crossed z=3.44 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "z_score": 3.443,
+        "direction": "up",
+        "description": "num_mentions crossed z=3.44 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "z_score": 3.233,
+        "direction": "up",
+        "description": "num_sources crossed z=3.23 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-23 00:00:00",
+        "z_score": 2.968,
+        "direction": "up",
+        "description": "positive_score crossed z=2.97 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.78,
+    "calibrated_probability": 0.78,
+    "extremized_probability": 0.9595,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.9189,
+    "kelly_fractional": 0.2297,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.4595,
+    "recommendation": "YES"
+  },
+  "thematic_clusters": [
+    "Dominant event type: Material Conflict",
+    "MODERATE_NEGATIVITY"
+  ],
+  "n_inflections": 27,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 51.62,
+  "timestamp": "2026-04-23T22:59:32.561154Z",
+  "error": null
+}

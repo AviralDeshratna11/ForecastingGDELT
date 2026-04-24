@@ -1,0 +1,122 @@
+{
+  "query": "Will Dhurandher 2 beat Dangal",
+  "event_description": "Will Dhurandher 2 beat Dangal",
+  "final_probability": 0.8681,
+  "raw_probability": 0.8681,
+  "calibrated_probability": 0.68,
+  "extremized_probability": 0.8681,
+  "recommendation": "YES",
+  "kelly_fraction": 0.1841,
+  "reasoning": "The UP trend with slope +0.2310, combined with z-score of +0.874 and 30-day AvgTone of 1.693, establishes a moderately positive baseline. Two recent inflection points (z=+3.20 and z=+3.08) in media coverage volume demonstrate surging attention. Goldstein scale of 1.952 and 68% Verbal Cooperation classification confirm constructive narrative framing. Negative momentum of -0.1037 introduces minor deceleration risk but insufficient to reverse overall positive trajectory given current signal strength and media volume acceleration.\n\nRationale: AvgTone current z-score of +0.874 indicates moderately positive sentiment above baseline. 30-day mean tone of 1.693 reflects mild positive coverage environment. Trend direction is UP with slope +0.2310, though strength is weak at 0.16/1.0. Recent 7-day tone of 1.576 shows +0.421 improvement vs prior week. Two major inflection points on 2026-04-22 (z=+3.20) and 2026-04-14 (z=+3.08) in num_sources signal surging media attention. Goldstein scale mean of 1.952 indicates net cooperative event framing. 68% Verbal Cooperation dominance vs 23% Verbal Conflict suggests positive narrative momentum. Negative momentum of -0.1037 indicates deceleration but not reversal. Combined signals point to 65-70% probability range.",
+  "reflection_notes": "Maximum iterations reached. Final Brier=0.7536.",
+  "evaluation_score": 0.7536,
+  "iterations": 1,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 0.874,
+    "target_mean": 1.745,
+    "target_std": 2.146,
+    "n_inflections": 2,
+    "n_significant": 2,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.23098,
+    "forecast_direction": "up",
+    "forecast_strength": 0.165,
+    "forecast_momentum": -0.1037,
+    "forecast_uncertainty": 4.6157,
+    "top_inflections": [
+      {
+        "date": "2026-04-22 00:00:00",
+        "z_score": 3.195,
+        "direction": "up",
+        "description": "num_sources crossed z=3.20 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-04-14 00:00:00",
+        "z_score": 3.084,
+        "direction": "up",
+        "description": "num_sources crossed z=3.08 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.68,
+    "calibrated_probability": 0.68,
+    "extremized_probability": 0.8681,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": 0.7362,
+    "kelly_fractional": 0.1841,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": 0.3681,
+    "recommendation": "YES"
+  },
+  "thematic_clusters": [
+    "Dominant: Verbal Cooperation",
+    "POSITIVE_COVERAGE"
+  ],
+  "n_inflections": 2,
+  "consequences": [
+    {
+      "consequence": "By June 2026, Dhurandher 2 production studios will secure 3-4 additional international distribution deals worth $15-22 million, expanding theatrical footprint across Southeast Asian markets including Indonesia, Malaysia, and Thailand",
+      "timeframe": "By June 2026",
+      "severity": "high",
+      "regions": [
+        "South Asia",
+        "Southeast Asia"
+      ],
+      "probability_if_event_occurs": 0.82
+    },
+    {
+      "consequence": "By July 2026, Dangal franchise investors will redirect $8-12 million in planned sequel funding toward alternative sports drama projects, causing 18-24 month delay in Dangal 3 pre-production timeline",
+      "timeframe": "By July 2026",
+      "severity": "medium",
+      "regions": [
+        "South Asia"
+      ],
+      "probability_if_event_occurs": 0.71
+    },
+    {
+      "consequence": "By August 2026, Indian film industry trade publications will report 12-15% increase in sports biopic greenlight approvals by major studios, citing Dhurandher 2 box office performance as validation of genre viability",
+      "timeframe": "By August 2026",
+      "severity": "low",
+      "regions": [
+        "Global"
+      ],
+      "probability_if_event_occurs": 0.58
+    }
+  ],
+  "key_indicators": [
+    "Daily box office gross differential between Dhurandher 2 and Dangal's equivalent release period (days 1-30), measured in INR crores with 10% threshold as critical marker",
+    "Number of distinct news sources covering Dhurandher 2 performance weekly - sustained z-score above +2.0 indicates continued media momentum validating commercial success narrative",
+    "AvgTone trajectory for entertainment industry coverage in South Asian markets - decline below 0.0 within 14 days would signal negative sentiment shift threatening box office sustainability"
+  ],
+  "scenarios": [
+    {
+      "label": "Accelerated",
+      "description": "Dhurandher 2 achieves breakout success exceeding Dangal's lifetime gross by 25-30% within first 4 weeks, driven by viral social media campaigns and cross-demographic appeal. International markets contribute 40% of total revenue versus projected 28%.",
+      "probability": 0.22,
+      "key_trigger": "Positive critical reviews from top-tier international film festivals combined with celebrity endorsement wave in first 10 days of release",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Base Case",
+      "description": "Dhurandher 2 surpasses Dangal's total box office by 8-12% through sustained 6-week theatrical run, capturing younger urban demographics while maintaining strong performance in tier-2 cities. Streaming rights sell for 15% premium over initial projections.",
+      "probability": 0.53,
+      "key_trigger": "Steady week-over-week box office retention of 55-65% with positive word-of-mouth maintaining momentum through May 2026",
+      "expected_date": "May 2026"
+    },
+    {
+      "label": "Reversal",
+      "description": "Dhurandher 2 underperforms Dangal by 15-20%, facing unexpected competition from concurrent major releases and mixed critical reception. Second-weekend drop exceeds 60%, limiting total theatrical window to 4 weeks.",
+      "probability": 0.25,
+      "key_trigger": "Negative audience reception to key plot elements or production quality issues amplified through social media, combined with stronger-than-expected competing film releases",
+      "expected_date": "May 2026"
+    }
+  ],
+  "elapsed_seconds": 42.52,
+  "timestamp": "2026-04-24T17:57:43.880122Z",
+  "error": null
+}

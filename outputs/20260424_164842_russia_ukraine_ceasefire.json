@@ -1,0 +1,85 @@
+{
+  "query": "Russia Ukraine ceasefire",
+  "event_description": "Russia Ukraine ceasefire",
+  "final_probability": 0.0221,
+  "raw_probability": 0.0221,
+  "calibrated_probability": 0.18,
+  "extremized_probability": 0.0221,
+  "recommendation": "NO",
+  "kelly_fraction": -0.239,
+  "reasoning": "The 100% Material Conflict classification across 91 days, combined with recent AvgTone deterioration (-0.138 weekly change to -2.591) and negative momentum (-0.0012), demonstrates entrenched active warfare with no cooperation signals. While positive_score inflections (z=+4.15, z=+3.02) and media volume spikes (num_mentions z=+3.48) appear significant, they coincide with conflict escalation dates (2026-02-24 peak coverage at 91,749 articles) rather than diplomatic breakthroughs. The flat trend slope (+0.0127) with negligible strength (0.05) confirms stagnation. Goldstein Scale at -0.048 indicates ongoing conflict-generating events dominate the information environment.\n\nRationale: Despite positive inflections in positive_score (z=+4.15 on 2026-04-12, z=+3.02 on 2026-02-23), the core conflict metrics remain deeply negative: AvgTone=-2.591 (7-day), worsening by -0.138 vs prior week, with 100% Material Conflict classification across all 91 days. Goldstein Scale recent=-0.048 indicates net conflict-generating events. The flat trend (slope=+0.0127, strength=0.05) with negative momentum (-0.0012) shows no meaningful trajectory toward ceasefire. The positive_score inflections reflect increased media coverage volume (num_mentions z=+3.48, num_sources z=+3.31 on 2026-02-24) during conflict escalation, not cooperation breakthroughs. Tone deterioration in recent week overrides earlier sentiment spikes.",
+  "reflection_notes": "Evaluation CONVERGED (Brier=0.9563, improvement=0.0000). Further iterations unlikely to improve estimate.",
+  "evaluation_score": 0.9563,
+  "iterations": 2,
+  "trend_analysis": {
+    "overall_trend": "stable",
+    "latest_z_score": 1.118,
+    "target_mean": -2.693,
+    "target_std": 0.371,
+    "n_inflections": 29,
+    "n_significant": 29,
+    "forecast_model": "PolyTrend",
+    "forecast_horizon": 30,
+    "forecast_slope": 0.01271,
+    "forecast_direction": "flat",
+    "forecast_strength": 0.053,
+    "forecast_momentum": -0.0012,
+    "forecast_uncertainty": 0.717,
+    "top_inflections": [
+      {
+        "date": "2026-04-12 00:00:00",
+        "z_score": 4.146,
+        "direction": "up",
+        "description": "positive_score crossed z=4.15 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "z_score": 3.478,
+        "direction": "up",
+        "description": "num_articles_evt crossed z=3.48 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "z_score": 3.475,
+        "direction": "up",
+        "description": "num_mentions crossed z=3.48 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-02-24 00:00:00",
+        "z_score": 3.315,
+        "direction": "up",
+        "description": "num_sources crossed z=3.31 (above 2.0-sigma threshold)"
+      },
+      {
+        "date": "2026-03-01 00:00:00",
+        "z_score": 3.059,
+        "direction": "up",
+        "description": "negative_score crossed z=3.06 (above 2.0-sigma threshold)"
+      }
+    ]
+  },
+  "calibration_report": {
+    "raw_probability": 0.18,
+    "calibrated_probability": 0.18,
+    "extremized_probability": 0.0221,
+    "method": "platt",
+    "extremize_alpha": 2.5,
+    "kelly_full": -0.9558,
+    "kelly_fractional": -0.239,
+    "kelly_fraction_used": 0.25,
+    "market_price": 0.5,
+    "edge": -0.4779,
+    "recommendation": "NO"
+  },
+  "thematic_clusters": [
+    "Dominant: Material Conflict",
+    "MODERATE_NEGATIVITY"
+  ],
+  "n_inflections": 29,
+  "consequences": [],
+  "key_indicators": [],
+  "scenarios": [],
+  "elapsed_seconds": 87.67,
+  "timestamp": "2026-04-24T16:48:40.345240Z",
+  "error": null
+}
